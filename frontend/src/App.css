@@ -1,0 +1,38 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.video-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-card:hover {
+  transform: translateY(-2px);
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.niche-selector {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.video-aspect-ratio {
+  aspect-ratio: 9/16;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
